@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@drawable/back1"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/register_head_textview"
+        android:layout_width="match_parent"
+        android:layout_height = "wrap_content"
+        android:text="Create Your Account Here"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_marginTop = "20dp"
+        android:textColor="@android:color/white"
+
+        />
+
+    <EditText
+        android:id="@+id/register_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_head_textview"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input_design"
+        android:hint="enter your phone number"
+        android:maxLength="11"
+        android:padding="20dp"
+        android:textColorHint="@android:color/white"
+        android:textSize="20dp" />
+    <EditText
+        android:id="@+id/register_name"
+        android:layout_width="match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_below = "@+id/register_phone"
+        android:textSize="20dp"
+        android:background = "@drawable/input_design"
+        android:padding = "20dp"
+        android:layout_marginTop = "50dp"
+        android:layout_marginRight = "20dp"
+        android:layout_marginLeft = "20dp"
+        android:hint ="enter your name"
+        android:textColorHint = "@android:color/white"
+        />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input_design"
+        android:hint="enter your password"
+        android:padding="20dp"
+        android:textColorHint="@android:color/white"
+        android:textSize="20dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#673AB7"
+
+        android:padding="20dp"
+        android:text="Register Now" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
